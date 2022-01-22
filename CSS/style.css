@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fruktur&family=Karla:ital,wght@1,300&family=Praise&display=swap');
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Luxurious Roman', cursive;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de Columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-60 {
+    width: 60%;
+    float: left;
+    margin-left: 20%;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 30%;
+    float: left;
+}
+
+.column-index {
+    float: left;
+    background-color: grey;
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+}
+
+.column-noticias {
+    float: left;
+    background-color: grey;
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    margin-left: 80%;
+}
+
+
+/* Otras clases */
+
+.index {
+    font-size: xxx-large;
+    background-color: grey;
+    text-align: center;
+}
+
+.noticias {
+    font-size: xxx-large;
+    background-color: grey;
+    text-align: center;
+}
+
+.Galeria {
+    font-size: xxx-large;
+    text-align: center;
+}
+
+.Apartados {
+    margin-left: 10%;
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 600px) {
+    /*reglas*/
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    #caja-10 {
+        width: 100%;
+    }
+    .column-nav,
+    .column-75 {
+        width: 100%;
+    }
+}
